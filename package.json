@@ -1,0 +1,25 @@
+{
+  "name": "sejutacita-rasyid",
+  "version": "1.0.0",
+  "description": "Project ini adalah REST API User dimana menggunakan Expressjs dan MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "author": "M. Rasyid Ridha",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.11.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "nodemon": "^2.0.7"
+  }
+}
