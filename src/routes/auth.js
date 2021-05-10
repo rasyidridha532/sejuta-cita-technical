@@ -9,11 +9,9 @@ router.post('/register', async (req, res) => {
         const savedUser = await User.create({
           username: 'rasyid',
           password: 'rasyid1234',
-          // password: await bcrypt.hash('rasyid1234', 10),
           role: 'admin',
       }, {
           username: 'ridha',
-          // password: await bcrypt.hash('rasyid2345', 10),
           password: 'rasyid2345',
           role: 'user',
       });
@@ -30,7 +28,6 @@ router.post('/login', async (req, res) => {
 
     const user = await User.findOne({username: username});
 
-    // const passwordExist = await bcrypt.compare(password, user.password);
     const passwordSame = await password === user.password;
 
     if (!passwordSame || !user) return res.status(400).send('Username atau password salah!');
